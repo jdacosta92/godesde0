@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"runtime"
+
+	"github.com/jdacosta92/godesde0/ejercicios"
 )
 
 func main() {
@@ -24,4 +26,8 @@ func main() {
 	default:
 		fmt.Printf("%s \n", os)
 	}
+
+	result, msg := ejercicios.ReturnIntString("23")
+	fmt.Println("Resultado :", result, "-->", msg)
+
 }
