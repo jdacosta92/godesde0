@@ -1,16 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"runtime"
-
-	"github.com/jdacosta92/godesde0/ejercicios"
+	"github.com/jdacosta92/godesde0/files"
 )
 
 func main() {
 	/*estado, resultado := variables.ConviertoaTexto(1588)
 	fmt.Println(estado)
-	fmt.Println(resultado)*/
+	fmt.Println(resultado)
 
 	if os := runtime.GOOS; os == "linux" || os == "OS X." {
 		fmt.Println("Esto no es windows", os)
@@ -27,7 +24,17 @@ func main() {
 		fmt.Printf("%s \n", os)
 	}
 
-	result, msg := ejercicios.ReturnIntString("23")
+	result, msg := ejercicios.ReturnIntString("g")
 	fmt.Println("Resultado :", result, "-->", msg)
 
+	keyboard.IngresoNumeros()
+
+	status, num := ejercicios.InputNum()
+
+	if status {
+		tabla := ejercicios.TablaMultiplicacion(num)
+		files.GrabaTabla(tabla)
+	} */
+
+	files.ReadFile()
 }
