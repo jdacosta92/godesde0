@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/jdacosta92/godesde0/files"
-)
+import "github.com/jdacosta92/godesde0/mapas"
 
 func main() {
 	/*estado, resultado := variables.ConviertoaTexto(1588)
@@ -34,7 +32,14 @@ func main() {
 	if status {
 		tabla := ejercicios.TablaMultiplicacion(num)
 		files.GrabaTabla(tabla)
-	} */
+	}
 
 	files.ReadFile()
+
+	funciones.Calculos()
+
+	funciones.LlamarClosure() */
+
+	mapas.MostrarMapas()
+
 }
