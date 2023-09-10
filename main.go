@@ -1,6 +1,6 @@
 package main
 
-import "github.com/jdacosta92/godesde0/mapas"
+import "github.com/jdacosta92/godesde0/users"
 
 func main() {
 	/*estado, resultado := variables.ConviertoaTexto(1588)
@@ -40,6 +40,7 @@ func main() {
 
 	funciones.LlamarClosure() */
 
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
 
+	users.AltaUsuario()
 }
