@@ -1,6 +1,9 @@
 package main
 
-import "github.com/jdacosta92/godesde0/users"
+import (
+	"github.com/jdacosta92/godesde0/ejercicios"
+	"github.com/jdacosta92/godesde0/modelos"
+)
 
 func main() {
 	/*estado, resultado := variables.ConviertoaTexto(1588)
@@ -42,5 +45,8 @@ func main() {
 
 	//mapas.MostrarMapas()
 
-	users.AltaUsuario()
+	//users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	ejercicios.HumanosRespirando(Pedro)
 }
