@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/jdacosta92/godesde0/ejercicios"
-	"github.com/jdacosta92/godesde0/modelos"
+	"fmt"
+
+	"github.com/jdacosta92/godesde0/goroutines"
 )
 
 func main() {
@@ -47,6 +48,16 @@ func main() {
 
 	//users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	ejercicios.HumanosRespirando(Pedro)
+	//Pedro := new(modelos.Hombre)
+	//ejercicios.HumanosRespirando(Pedro)
+
+	//defer_panic.VemosDefer()
+	//defer_panic.EjemploPanic()
+
+	go goroutines.MiNombreLento("Julian")
+
+	fmt.Println("Estoy aqui")
+	var x string
+	fmt.Scanln(&x)
+
 }
