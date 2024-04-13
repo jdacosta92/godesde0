@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/jdacosta92/godesde0/goroutines"
+	"github.com/jdacosta92/godesde0/middleware"
 )
 
 func main() {
@@ -54,10 +52,21 @@ func main() {
 	//defer_panic.VemosDefer()
 	//defer_panic.EjemploPanic()
 
-	go goroutines.MiNombreLento("Julian")
+	/*canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Julian", canal1)
+	defer func() { <-canal1 }() // defer con todos los channel await
 
 	fmt.Println("Estoy aqui")
+
 	var x string
 	fmt.Scanln(&x)
+	fmt.Println("El usuario ingreso por teclado : ", x) */
+
+	//<-canal1 // esto signica que va a esperar a que canal1 existe como verdadero (true)
+	// se puede poner todos los channel al final o .. se puede poner todos en un defer arriba para mas prolijidad
+
+	//webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 
 }
